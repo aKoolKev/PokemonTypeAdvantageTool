@@ -116,7 +116,6 @@ function addSelection (e){
 
 //Get effectiveness of the selection
 function getTypeAdvantage(defendingPokemonType){
-    let path = "/icon/";
 
     //Base case: missing one or both types
     if(defendingPokemonType === null || defendingPokemonType === undefined){
@@ -135,7 +134,7 @@ function getTypeAdvantage(defendingPokemonType){
             // has weakness to
             if (effectiveness >= 2){
                 const typeIcon = document.createElement('img');
-                typeIcon.src="/icons/" + type.toLowerCase() + ".svg";
+                typeIcon.src="icons/" + type.toLowerCase() + ".svg";
                 typeIcon.style.width = "25px";
                 typeIcon.style.display = "inline-block";
                 const typeText = document.createTextNode(` ${type}\n`); // Add space before text
@@ -148,7 +147,7 @@ function getTypeAdvantage(defendingPokemonType){
             // has immunity to
             else if (effectiveness === 0){
                 const typeIcon = document.createElement('img');
-                typeIcon.src="/icons/" + type.toLowerCase() + ".svg";
+                typeIcon.src="icons/" + type.toLowerCase() + ".svg";
                 typeIcon.style.width = "25px";
                 typeIcon.style.display = "inline-block";
                 const typeText = document.createTextNode(` ${type}\n`); // Add space before text
