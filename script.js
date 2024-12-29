@@ -124,6 +124,7 @@ function getTypeAdvantage(defendingPokemonType){
     else { 
         weaknessField.textContent = '';
         immuneField.textContent = '';
+        immuneField.style.textAlign = 'left'
         instrField.textContent = '';
     
         for (const [type, effectiveness] of Object.entries(typeChart[defendingPokemonType])){
