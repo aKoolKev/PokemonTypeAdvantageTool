@@ -1,0 +1,8 @@
+.type-container li input{
+    margin: 10px;
+}
+.type-container img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 2px;
+}
